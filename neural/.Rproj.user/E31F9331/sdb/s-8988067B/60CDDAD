@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\n\n# Define UI for application that draws a histogram\nshinyUI(fluidPage(\n  \n  # Application title\n  titlePanel(\"Old Faithful Geyser Data\"),\n  \n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n      \n    ),\n    \n    # Show a plot of the generated distribution\n    mainPanel(\n       plotOutput(\"distPlot\")\n    )\n  )\n))\n",
+    "created" : 1463887674029.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2774539448",
+    "id" : "60CDDAD",
+    "lastKnownWriteTime" : 1463894071,
+    "last_content_update" : 1463894071988,
+    "path" : "/media/respati/Data/Data/PI/PI tyo/neural/ui/ui.R",
+    "project_path" : "ui/ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

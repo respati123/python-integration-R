@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\nshinyUI(pageWithSidebar(\n  headerPanel(\"Cars 93\"),\n  sidebarPanel(),\n  mainPanel()\n))\n\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({plot(concrete_model2)\n    \n    # generate bins based on input$bins from ui.R\n    \n  })\n  \n})\n",
+    "created" : 1463887674151.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2958430475",
+    "id" : "F913FFE2",
+    "lastKnownWriteTime" : 1463894014,
+    "last_content_update" : 1463894014642,
+    "path" : "/media/respati/Data/Data/PI/PI tyo/neural/ui/server.R",
+    "project_path" : "ui/server.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

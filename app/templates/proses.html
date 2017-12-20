@@ -1,0 +1,44 @@
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Keakuratan Beton</title>
+
+    <link href="{{ url_for('static', filename ='css/bootstrap.min.css')}}" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div>
+
+  <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Normalize</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Summary</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Correlation</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Plot</a></li>
+        <li><a href="/" class="btn btn primary">Back</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div  role="tabpanel" class="tab-pane active" id="home"><pre width="1200px">{{a[1]}}</pre></div>
+        <div role="tabpanel" class="tab-pane" id="profile"><pre>{{a[0]}}</pre></div>
+        <div role="tabpanel" class="tab-pane" id="messages"><pre>{{a[2]}}</pre></div>
+        <div role="tabpanel" class="tab-pane" id="settings"><img src="{{url_for('static',filename='myplot.png')}}"></div>
+      </div>
+
+    </div>
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/style.js')}}"></script>
+  </body>
+</html>
+{% endblock %}
